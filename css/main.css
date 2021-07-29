@@ -8,12 +8,7 @@ body{
 /* *******************
  nav bar css 
  ********************* */
-.nav-font{
-    font-size: 16px;
-    font-weight: 500;
-   line-height: 24px;
-   padding: 10 0;
-}
+
 .nav-btn{
     width: 120px;
     height: 55px;
@@ -24,9 +19,7 @@ body{
 /*********************
  baner css
  ******************** */
-.banner-text{
-    width: 480px;
-}
+
 .banner-img{
     width: 552px; 
     height: 447px;
