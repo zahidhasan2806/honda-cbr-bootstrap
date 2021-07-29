@@ -8,40 +8,41 @@
     <title>Honda</title>
     <!-- Bootstrap Style  -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/315faac2f0.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header class="bg-success">
-        <nav class="navbar navbar-expand-lg navbar-light py-5">
+    <header class="bg-banner">
+        <nav class="navbar navbar-expand-md navbar-light py-5">
             <div class="container">
-                <button class="navbar-toggler ms-auto mx-3" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler ms-auto mx-3 text-c" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-3 ">
-                            <a class="nav-link active text-white fs-5" aria-current="page" href="#">Home</a>
+                    <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item mx-auto mx-lg-3">
+                            <a class="nav-link active text-white nav-font" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link active text-white fs-5" aria-current="page" href="#">Shop</a>
+                        <li class="nav-item mx-auto mx-lg-3">
+                            <a class="nav-link active text-white nav-font" aria-current="page" href="#">Shop</a>
                         </li>
-                        <li class="nav-item mx-3 ">
-                            <a class="nav-link active text-white fs-5" aria-current="page" href="#">News</a>
+                        <li class="nav-item mx-auto mx-lg-3 ">
+                            <a class="nav-link active text-white nav-font" aria-current="page" href="#">News</a>
                         </li>
-                        <li class="nav-item mx-3  ">
-                            <a class="nav-link active text-white fs-5 " aria-current="page" href="#">Contact</a>
                         </li>
-                        <button class="btn btn-warning mx-5 py-2 px-4 text-white    fs-5 rounded-3"
+                        <button class="nav-btn border-0 mx-auto mx-lg-5 text-white nav-font rounded-3"
                             type="submit">Login</button>
                     </ul>
                 </div>
@@ -49,21 +50,23 @@
         </nav>
         <section class="container pb-5">
             <div>
-                <div class="row align-items-center rounded-3">
-                    <div class="col-lg-6 text-white">
-                        <h6 class="fw-normal">Computer-controlled digital transistorized with electronic advance</h6>
+                <div class="row align-items-center justify-content-between rounded-3 p-1">
+                    <div class="banner-text col-lg-4 text-white">
+                        <h6 class="fs-6 fw-light">Computer-controlled digital transistorized with electronic advance
+                        </h6>
                         <h1 class="fw-bolder">Honda CBR 300R</h1>
-                        <p class="lh-base">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        <p class="fs-6 fw-normal">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                            sint.
                             Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
                             amet.</p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary py-2 px-5 rounded-3 text-white fs-5 "
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="modal-btn rounded-3 text-white" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             Purchase
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        <div class="modal fade p-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
@@ -109,8 +112,8 @@
                         </div>
                         <!-- MOdal end -->
                     </div>
-                    <div class="col-lg-6 mt-5">
-                        <img src="images/header-bike.png" class="w-100" alt="">
+                    <div class="col-lg-6 mt-5 ">
+                        <img src="images/header-bike.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -119,74 +122,78 @@
     </header>
     <!-- header section end -->
     <main>
-        <!-- bike collection -->
+        <!--featured bike collection start -->
         <section class="container my-5">
-            <div class="text-center">
-                <h1 class="fw-bold fs-1">Fetured Bikes 2021</h1>
-                <h4>Best bike collection</h4>
+            <div class="feature-title text-center">
+                <h1 class="fw-bolder fs-1">Fetured Bikes 2021</h1>
+                <h4 class="fw-bolder fs-5">Best bike collection</h4>
             </div>
-            <div class="row justify-content-between mt-5 ">
-                <div class="col-md-3 p-5">
+            <div class="row justify-content-around my-5 ">
+                <div class="col-md-3 my-5 px-lg-0 px-5 feature-img">
+                    <img src="images/feature-bike.jpg" class="img-fluid grayscale-img" alt="">
+                </div>
+                <div class="col-md-3 my-5 px-lg-0 px-5 feature-img">
                     <img src="images/feature-bike.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-3 p-5">
-                    <img src="images/feature-bike.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-md-3 p-5">
-                    <img src="images/feature-bike.jpg" class="img-fluid" alt="">
+                <div class="col-md-3 my-5 px-5 px-lg-0 feature-img">
+                    <img src="images/feature-bike.jpg" class="img-fluid grayscale-img" alt="">
                 </div>
             </div>
         </section>
-        <!-- bike collection end -->
+        <!--featured bike collection end -->
 
         <!-- Client review start -->
         <section class="container my-5">
-            <h1 class="fs-1 fw-bolder text-center">Happy <span class="text-warning">Client Says</span></h1>
-            <div class="d-md-flex mt-5">
+            <h1 class="fw-bolder text-center">Happy <span class="client-text-color">Client Says</span>
+            </h1>
+            <div class="d-md-flex my-5">
                 <div class="card mx-3 my-3 align-items-center ">
-                    <img src="images/user-1.png" class="card-img-top w-50 pt-5" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Slate helps you see how many more days you need to work to reach your
+                    <img src="images/user-1.png" class="card-img-top w-50 py-5" alt="...">
+                    <div class="card-body">
+                        <p class="card-text fs-6">Slate helps you see how many more days you need to work to reach your
                             financial goal for the month and year.</p>
-                        <div class="text-warning my-3">
+                        <div class="rating my-3">
+                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h5 class="card-title text-primary">Regina Miles</h5>
-                        <p class="card-text fw-bold">Banker</p>
+                        <h5 class="card-title fs-6 ">Regina Miles</h5>
+                        <p class="fs-6 fw-bold">Banker</p>
                     </div>
                 </div>
                 <div class="card mx-3 my-3 align-items-center">
-                    <img src="images/user-2.png" class="card-img-top w-50 pt-5" alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Slate helps you see how many more days you need to work to reach
+                    <img src="images/user-2.png" class="card-img-top w-50 py-5" alt="...">
+                    <div class="card-body">
+                        <p class="card-text fs-6">Slate helps you see how many more days you need to work to reach
                             your
                             financial goal for the month and year.</p>
-                        <div class="text-warning my-3">
+                        <div class="rating my-3">
+                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h5 class="card-title text-primary">Regina Miles</h5>
-                        <p class="card-text fw-bold">Banker</p>
+                        <h5 class="card-title fs-6">Regina Miles</h5>
+                        <p class="fs-6 fw-bold">Banker</p>
                     </div>
                 </div>
                 <div class="card mx-3 my-3 align-items-center">
-                    <img src="images/user3.png" class="card-img-top w-50 pt-5" w alt="...">
-                    <div class="card-body text-center">
-                        <p class="card-text">Slate helps you see how many more days you need to work to reach your
+                    <img src="images/user3.png" class="card-img-top py-5 w-50" w alt="...">
+                    <div class="card-body">
+                        <p class="card-text fs-6">Slate helps you see how many more days you need to work to reach your
                             financial goal for the month and year.</p>
-                        <div class="text-warning my-3">
+                        <div class="rating my-3">
+                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <h5 class="card-title text-primary">Regina Miles</h5>
-                        <p class="card-text fw-bold">Banker</p>
+                        <h5 class="card-title fs-6">Regina Miles</h5>
+                        <p class="fs-6 fw-bold">Banker</p>
                     </div>
                 </div>
             </div>
@@ -195,14 +202,14 @@
 
         <!-- FAQ section start  -->
         <section class="container">
-            <h1 class="text-center">Frequently Asked <span class="text-warning">Questions</span></h1>
+            <h1 class="text-center my-5 fw-bolder">Frequently Asked <span class="faq-text">Questions</span></h1>
             <div class="row align-items-center justify-content-between">
-                <div class="col-md-5">
-                    <img src="images/faq.png" class="img-fluid" alt="">
+                <div class="col-md-4 my-5">
+                    <img src="images/faq.png" class="img-fluid px-lg-0 px-3" alt="">
                 </div>
-                <div class="col-md-5 mt-5 ">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
+                <div class="col-md-6 mt-5 ">
+                    <div class="accordion px-lg-0 px-3" id="accordionExample">
+                        <div class="accordion-item mt-3 border">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -220,7 +227,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item mt-3 border">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -238,7 +245,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item mt-3 border">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -256,14 +263,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item mt-3 border">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     What rules should I follow when riding my bike?
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p class="text-muted">1. Wear a Helmet: No matter what, always wear a helmet. Invest
@@ -280,43 +287,132 @@
                 </div>
             </div>
         </section>
+
         <!-- FAQ Section end -->
+
+        <!-- upcoming model  -->
+        <section>
+            <section class="container mt-5 ">
+                <h1 class="text-center my-5 ">Upcoming <span class="new-model-title">Model</span></h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner carousel-bg">
+                        <div class="carousel-item active">
+                            <div class="row d-flex align-items-center p-5 rounded-3">
+                                <div class="col-lg-7 text-white">
+                                    <h1 class=" my-5">Ducati <span class="bike-name">XDIAVEL S-73</span></h1>
+                                    <p class=" my-5">The Diavel 1260 combines the performance of a maxi-naked
+                                        with
+                                        the ergonomics of a muscle cruiser.</p>
+                                    <h4 class="my-3">Estimated price </h4>
+                                    <h6 class="my-3"> ৳ 1.70 Lakh</h6>
+                                    <button class="carousel-btn rounded-3 text-white ">Add To Cart <i
+                                            class="fas fa-cart-arrow-down"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-5 mt-3">
+                                    <img src="images/bike-1.png" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row  d-flex align-items-center p-5 rounded-3">
+                                <div class="col-lg-7 text-light">
+                                    <h1 class="my-5">Honda <span class="bike-name">CBR500R</span>
+                                    </h1>
+                                    <p class="my-5">Is it any wonder why the Honda CBR500R is one of our most
+                                        popular sportbikes? It just gets so many things right. Price. Power. Weight.
+                                    </p>
+                                    <h4 class="my-3">Estimated price </h4>
+                                    <h6 class="my-3">৳ 2.5 Lakh</h6>
+                                    <button class="carousel-btn rounded-3 text-white fs-5">Add To Cart <i
+                                            class="fas fa-cart-arrow-down"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-5 mt-3">
+                                    <img src="images/bike-3.png" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row  d-flex align-items-center p-5 rounded-3">
+                                <div class="col-lg-7 text-light">
+                                    <h1 class=" my-5">Royal <span class="bike-name">Enfield</span></h1>
+                                    <p class=" my-5"> is expected to launch 6 bikes in the year
+                                        2021-2022. 2021 Royal
+                                        Enfield Classic 350, Royal Enfield Hunter 350 and Royal Enfield 2021 Bullet 350
+                                        are launching soon</p>
+                                    <h4 class="my-3">Estimated price</h4>
+                                    <h6 class="my-3">৳ 1.70 Lakh</h6>
+                                    <button class="carousel-btn rounded-3 text-white fs-5">Add To Cart <i
+                                            class="fas fa-cart-arrow-down"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-5 mt-3">
+                                    <img src="images/bike-2.png" class="d-block w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </section>
     </main>
-    <footer class="bg-dark container mt-5">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-lg-6 my-5">
-                <ul class="d-flex list-unstyled">
-                    <li><a href="" class="mx-3 text-decoration-none text-white">Download Now</a></li>
-                    <li><a href="" class="mx-3 text-decoration-none text-white">License</a></li>
-                </ul>
-                <ul class="d-flex flex-wrap list-unstyled">
-                    <li><a href="" class="mx-3 text-decoration-none text-white">About</a></li>
-                    <li><a href="" class="mx-3 text-decoration-none text-white">Feature</a></li>
-                    <li><a href="" class="mx-3 text-decoration-none text-white">Pricing</a></li>
-                    <li><a href="" class="mx-3 text-decoration-none text-white">Careers</a></li>
-                    <li><a href="" class="mx-3 text-decoration-none text-white">Help</a></li>
-                    <li><a href="" class="mx-3 text-decoration-none text-white">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 d-flex my-5">
-                <div class="ms-md-auto pe-5">
-                    <h2 class="text-white mx-3">Get the App</h2>
-                    <div class="mt-2 d-flex flex-column">
+    <!-- footer start -->
+    <footer class="bg-dark  mt-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 my-5">
+                    <ul class="d-flex list-unstyled">
+                        <li><a href="" class="mx-3 text-decoration-none text-white">Download Now</a></li>
+                        <li><a href="" class="mx-3 text-decoration-none text-white">License</a></li>
+                    </ul>
+                    <ul class="d-flex flex-wrap list-unstyled">
+                        <li><a href="" class="mx-3 text-decoration-none text-white">About</a></li>
+                        <li><a href="" class="mx-3 text-decoration-none text-white">Feature</a></li>
+                        <li><a href="" class="mx-3 text-decoration-none text-white">Pricing</a></li>
+                        <li><a href="" class="mx-3 text-decoration-none text-white">Careers</a></li>
+                        <li><a href="" class="mx-3 text-decoration-none text-white">Help</a></li>
+                        <li><a href="" class="mx-3 text-decoration-none text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 d-flex my-5">
+                    <div class="ms-md-auto pe-5">
+                        <h2 class="text-white mx-3">Get the App</h2>
+                        <div class="mt-2 d-flex flex-column">
+                            <button class="btn btn-dark border mt-3 mx-3"><i class="fab fa-apple fs-1 px-3"></i> <span
+                                    class="d-inline-block">
+                                    <small class="fw-light d-block">Available on the</small> App Store </span> </button>
 
-                        <button class="btn btn-dark border mt-3 mx-3"><i class="fab fa-apple fs-1 px-3"></i> <span
-                                class="d-inline-block">
-                                <small class="fw-light d-block">Available on
-                                    the</small> App Store </span> </button>
-
-                        <button class="btn btn-dark border mt-3 mx-3">
-                            <i class="fab fa-google-play fs-1 px-3"></i> <span class="d-inline-block "> <small
-                                    class="fw-light d-block">Get it on
-                                    the</small> Google Play </span> </button>
+                            <button class="btn btn-dark border mt-3 mx-3">
+                                <i class="fab fa-google-play fs-1 px-3"></i> <span class="d-inline-block "> <small
+                                        class="fw-light d-block">Get it on
+                                        the</small> Google Play </span> </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- footer end -->
+
     <!-- Bootstrap Script -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,0 +1,107 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.bg-banner{
+    background-color: #264653;
+}
+
+/* *******************
+ nav bar css 
+ ********************* */
+.nav-font{
+    font-size: 16px;
+    font-weight: 500;
+   line-height: 24px;
+   padding: 10 0;
+}
+.nav-btn{
+    width: 120px;
+    height: 55px;
+    background-color: #E76F51; 
+    padding: 10px 24px;
+   
+}
+/*********************
+ baner css
+ ******************** */
+.banner-text{
+    width: 480px;
+}
+.banner-img{
+    width: 552px; 
+    height: 447px;
+}
+.banner-text p{
+    color: #E0E0E0;
+    line-height: 24px;
+}
+.modal-btn{
+    width: 168px;
+    height: 44px;
+    background-color: #E76F51;
+    padding:10px 46px;
+    border: none;
+}
+
+/* ************************
+ featured bikes  style 
+************************* */
+
+.feature-title h4{
+    color: #E76F51;
+}
+.grayscale-img{
+    filter: grayscale(100%);
+}
+
+/* ******************
+ clients review css 
+****************** */
+.client-text-color{
+    color: #E76F51;
+}
+.card-body{
+    width: 290px;
+    text-align: center;
+}
+.rating{
+    color: #E76F51;
+}
+.rating .fas{
+    width: 18px;
+    height: 18px;
+}
+.card-text{
+    color:#6C6C6C;
+
+}
+.card-title{
+    color:#23A6F0;
+    
+}
+
+/* ************************
+ FaQ style 
+************************* */
+.faq-text{
+    color: #E76F51;
+}
+
+/* ************************
+ image slider
+ ************************ */
+ .new-model-title{
+    color: #E76F51;
+}
+ .carousel-bg{
+     background-color:#264653 ;
+ }
+ 
+ .bike-name{
+     color: #E76F51;
+ }
+ .carousel-btn{
+    background-color: #E76F51;
+    border: none;
+    padding: 10px 45px;
+ }
