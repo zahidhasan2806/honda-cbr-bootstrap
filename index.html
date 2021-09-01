@@ -21,7 +21,11 @@
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body onload="preLoader()">
+    <div id="pre-loader" class="d-flex justify-content-center overflow-hidden"
+        style=" height: 100vh;  background-color: #264653;">
+        <img class="img-fluid w-25" src="images/gif.gif" alt="">
+    </div>
     <header class="bg-banner">
         <nav class="navbar navbar-expand-md navbar-light py-5">
             <div class="container">
@@ -48,6 +52,7 @@
                 </div>
             </div>
         </nav>
+
         <section class="container pb-5">
             <div>
                 <div class="row align-items-center justify-content-between rounded-3 p-1">
@@ -492,6 +497,7 @@
 
     <!-- Bootstrap Script -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
